@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Tecnologia da Informação da SME-Jacareí</title>
+    </head>
+    <body>
+        <!--CABEÇALHO - Contendo também a navegação do site -->
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="#" id="btn-home-section">Home</a></li>
+                    <li><a href="#" id="btn-chamado-section">Chamados</a></li>
+                    <li><a href="#" id="btn-impressora-section">Impressoras</a></li>
+                    <li><a href="#" id="btn-contato-section">Contato</a></li>
+                    <li><a href="#" id="btn-sobre-section">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--HOME PAGE-->
+            <section class="container" id="home-section">
+                <div>
+                    <h1>HOME PAGE</h1>
+                    <hr>
+                </div>
+                <div class="container">
+                    <h2>Dashboard dos Chamados</h2>
+                    <div class="iframe-container">
+                        <iframe src="https://lookerstudio.google.com/embed/reporting/7e390f0b-0f7c-4e78-b96d-81c85400edc8/page/p_e2ag4t1nsd" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Dashboard DTI-SME" class="responsive-iframe"></iframe>
+                    </div>
+                    <p><small>Fonte: <a href="https://sme-glpi.jacarei.sp.gov.br">GLPI</a>.</small></p>
+                </div>
+                <hr>
+                <div class="container">
+                    <p>Este site foi feito como um modo de estar divulgando algumas informações as Escolas Municipais de Jacareí em relação as instruções e dos chamados do DTI da SME.</p>
+                    <p>Se veio aqui procurando como abrir um chamado, as instruções e o link estão por aqui: <a href="#" onclick="showSection(chamadoSection);">GLPI</a></p>
+                </div>
+            </section>
+            <!-- CHAMADOS -->
+            <section class="container hidden" id="chamado-section">
+                <h1>CHAMADOS</h1>
+                <hr>
+                <h2>Onde abrir o chamado?</h2>
+                <p>A equipe do DTI da Secretaria Municipal de Educação usa o <a href="https://sme-glpi.jacarei.sp.gov.br/">GLPI</a> como seu sistema principal de chamados.</p>
+                <p>É através dele que as escolas podem estar abrindo um chamado junto a equipe. Abaixo segue um pequeno tutorial de como estar fazendo a abertura do chamado:</p>
+                <hr>
+                <h3>Abrindo um chamado pelo <strong>GLPI</strong></h3>
+                <p><strong>1º Usuário</strong></p>
+                <p>Tenha sempre em mãos o usuário da escola...</p>
+                <p><strong>2º Tela inicial</strong></p>
+                <p>Assim que conseguir o acesso ao sistema do GLPI, você poderá acessar os formulários onde será descrito o problema ocorrendo, conforme a imagem.</p>
+            </section>
+            <!-- IMPRESSORAS -->
+            <section class="container hidden" id="impressora-section">
+                <h1>IMPRESSORAS</h1>
+                <hr>
+                <div class="container">
+                    <p>Esta parte contém instruções sobre as impressoras da empresa RSA.</p>
+                </div>
+                <div>
+                    <h2>Página de Status</h2>
+                    <hr>
+                    <p>Desde o mês de Setembro de 2025, agora o setor de T.I está pedindo para que seja enviado a página de status da impressora em vez de enviar somente os valores, isto é para ajudar no melhor controle do uso das impressoras, além de evitar possíveis erros que vinham ocorrendo devido a erros de digitação.</p>
+                    <h3>Kyocera M3655idn</h3>
+                    <hr>
+                    <p>A seguir tem um vídeo demontrando como pode ser feito a retirada da página de Status da Kyocera M3655idn.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zi_XLOBDo_Y?si=bceyunC31O6wB-Ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>Kyocera M2640idw</h3>
+                    <hr>
+                    <p>O processo da Kyocera M2640idw é parecido, o que muda seria a necessidade de usar o teclado da impressora, visto que a tela é menor. A seguir esta um vídeo demonstrando como fazer o processo.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/h_D3VFfhvs4?si=HTxrtXL2fPKZMqHZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+            <!-- CONTATO -->
+            <section class="container hidden" id="contato-section">
+                <h1>CONTATO</h1>
+                <hr>
+            </section>
+            <!-- SOBRE -->
+            <section class="container hidden" id="sobre-section">
+                <h1>SOBRE</h1>
+                <hr>
+            </section>
+            <section class="container hidden" id="carregamento-section">
+                <p>Carregando</p>
+            </section>
+        </main>
+    </body>
+    <script src="js/app.js"></script>
+    <footer class="container">
+        <small>&copy; 2025 - Site de Apoio do DTI-SME de Jacareí. - <a href="https://educajacarei.com.br/">Secretaria de Educação de Jacareí</a></small>
+        <p><small>Feito com <a href="https://picocss.com/">pico.css</a></small></p>
+    </footer>
+</html>
