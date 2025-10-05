@@ -50,6 +50,29 @@ body {
   padding-top: 1%;
   padding-bottom: 1%;
 }
+
+.chamado-interno{
+  color: rgb(0, 114, 240);
+}
+.chamado-externo{
+  color: rgb(0, 182, 203);
+}
+.chamado-telefonia{
+  color: rgb(255, 168, 0);
+}
+.chamado-impressora{
+  color: rgb(246, 109, 0);
+}
+
+.status-novo{
+  color: rgb(56, 142, 60);
+}
+.status-ematendimento{
+  color: rgb(76, 175, 80);
+}
+.status-pendente{
+ color: rgb(255, 143, 0);
+}
 /* ========================
    Cabeçalho e Navegação
 ======================== */

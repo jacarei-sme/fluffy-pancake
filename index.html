@@ -35,58 +35,83 @@
                         </div>
                         <p><strong>Fonte:</strong><a href="https://sme-glpi.jacarei.sp.gov.br">GLPI</a></p>
                     </div>
-                </div>
-                <hr>
-                <div class="container">
-                    <p>Este site foi feito como um modo de estar divulgando algumas informações as Escolas Municipais de Jacareí em relação as instruções e dos chamados do DTI da SME.</p>
-                    <p>Se veio aqui procurando como abrir um chamado, as instruções e o link estão por aqui: <a href="#" onclick="showSection(chamadoSection);">GLPI</a></p>
+                    <hr>
+                    <h3>De onde vem os dados do Dashboard?</h3>
+                    <p>Os dados apresentados neste <strong>Dashboard</strong> são retirados diretamente do Sistema de Chamados (<strong>GLPI</strong>), a intenção principal é deixar mais acessível as escolas e todos interessados como estão os atendimentos da equipe.</p>
+                    <hr>
+                    <h3>Sobre os grupos</h3>
+                    <p>Os dados são representados conforme seu tipo, entende-se por:</p>
+                    <h4 class="chamado-interno">Interno</h4>
+                    <p>São os chamados abertos pelos usuários que fazem parte do Administrativo da Secretaria de Educação.</p>
+                    <h4 class="chamado-externo">Externo</h4>
+                    <p>São os chamados abertos pelos usuários das Escolas Municipais.</p>
+                    <h4 class="chamado-telefonia">Telefonia</h4>
+                    <p>São os chamados abertos com a equipe após a confirmação com a provedora de telefone (<strong>Vivo</strong>) de que o problema encontra-se internamente.</p>
+                    <h4 class="chamado-impressora">Impressora</h4>
+                    <p>São os chamados das escolas aberto junto a equipe para que possamos estar repassando a empresa <strong>RSA</strong> relacionados as impressoras <strong>Kyocera M3655idn</strong> e <strong>Kyocera M2640idw</strong> que pertencem a terceirizada. Vale notar que estes chamados não são relacionados as impressoras que foram adquiridas particularmente pela escola.</p>
+                    <hr>
+                    <h3>Sobre os Status</h3>
+                    <h4 class="status-novo">Novos</h4>
+                    <p>Chamados recém abertos ou que ainda estão esperando para serem iniciados o atendimento pela equipe. Esse é o padrão inicial de todo chamado.</p>
+                    <h4 class="status-ematendimento">Em Atendimento</h4>
+                    <p>Este <strong>Status</strong> é usado para demonstrar que o chamado em questão está sendo atendido pela equipe.</p>
+                    <h4 class="status-pendente">Pendentes</h4>
+                    <p>Neste caso, os chamados estão esperando alguma pendência ser resolvida antes de continuar o atendimento. No caso das <strong>Impressoras</strong>, isto ocorre devido ao tempo necessário para a equipe da <strong>RSA</strong> estar atendendo estes chamados. Vale notar que no caso das <strong>Impressoras</strong> é um padrão o chamado ser deixado em <strong>Pendente</strong> toda vez que se é repassado a empresa.</p>
                 </div>
                 <!--Sobre o Fust-->
-                <div>
+                <!--div>
                     <h2>Internet Conectada - Fust</h2>
                     <p>As informações aqui são todas retiradas de fontes públicas de sites do governo, então não somos os autores de nada e apenas estamos pegando as informações encontradas.</p>
                     <p>Nesta <a href="https://www.gov.br/mec/pt-br/assuntos/noticias/2024/novembro/escolas-municipais-comecam-a-receber-servicos-de-conectividade">notícia </a>que esta no site do <strong>gov.br</strong>, temos algumas informações sobre o programa.</p>
                     <p>Neste <a href="https://docs.google.com/spreadsheets/d/1KkDzKp513zBaKCrUGQlYuTDNTwtYPMwg5HapmXQNLpk/edit?gid=0#gid=0">link </a>temos acesso a uma tabela criada diretamente pelo <strong>MEC </strong>em que se é possível ver mais informações sobre as escolas que foram escolhidas pelo programa.</p>
-                </div>
+                </div-->
                 <!-- Mudança dos e-mails institucionais-->
             </section>
             <!-- CHAMADOS -->
             <section class="container hidden" id="chamado-section">
                 <h1>CHAMADOS</h1>
                 <hr>
-                <h2>Onde abrir o chamado?</h2>
-                <p>A equipe do DTI da Secretaria Municipal de Educação usa o <a href="https://sme-glpi.jacarei.sp.gov.br/">GLPI</a> como seu sistema principal de chamados.</p>
-                <p>É através dele que as escolas podem estar abrindo um chamado junto a equipe. Abaixo segue um pequeno tutorial de como estar fazendo a abertura do chamado:</p>
+                <h2>GLPI</h2>
+                <p><strong>GLPI</strong> é um Sistema de Gerenciamento de Ativos, Rastreamento de Problemas e Central de Serviços. É um sistema completo que além de trazer os chamados abertos por locais (<strong>ENTIDADE</strong>), também traz a possibilidade de monitorar os ativos de informática disponíveis em cada local.</p>
                 <hr>
+                <h2>Usando o GLPI</h2>
+                <p>As ordens de serviço do TI da SME podem ser feitas pelo site do <strong>GLPI</strong> usando o seu cadastro anteriormente feito. A seguir, montamos um pequeno tutorial explicando como estar abrindo um chamado junto ao sistema. Vale lembrar que, além do chamado, também irão estar contidos neles as soluções apresentadas aos problemas, sendo possível estar monitorando.</p>
                 <h3>Abrindo um chamado pelo <strong>GLPI</strong></h3>
-                <p><strong>Usuário</strong></p>
-                <p>O sistema do GLPI da SME está pela URL: https://sme-glpi.jacarei.sp.gov.br. Nele você irá encontrar esta tela:</p>
+                <h4>Acessando o Usuário</h4>
+                <p>Tenha em mãos o <strong>Usuário</strong>(Nome de utilizador) e <strong>Senha</strong> (Palavra-passe). Em seguida, dirija-se ao site: <a href="https://sme-glpi.jacarei.sp.gov.br">GLPI</a> e, conforme a<strong> Imagem</strong>, preencha os campos.</p>
                 <div class="div-center">
                     <img src="img/glpi/glpiLogin.jpeg" alt="Tela de login do GLPI">
                     <p><strong>Fonte:</strong>Autores.</p>
                 </div>
-                <p>Assim que entrar na tela, use o usuário e a senha e depois clique em "Iniciar Seção", se tudo estiver correto, você sera levado até a proxíma tela.</p> 
-                <p><strong>Tela inicial</strong></p>
-                <p>A tela inicial é onde você pode usar para estar abrindo o chamado. Nela, selecione qual tipo de chamado quer abrir.</p>
+                <p>Em seguida, clique em <strong>Iniciar Seção</strong> para continuar.</p> 
+                <h4>Tela Inicial</h4>
+                <p>Na <strong>Tela Inicial</strong> é onde você poderá selecionar o tipo do chamado. Tenha em mente o seguinte:</p>
+                <h5>Solicitação de Serviço de T.I</h5>
+                <p>Este campo é focado em problemas relacionados a situações como reparo de cabo de rede, instalação de software ou problemas com o uso dos computadores.</p>
+                <h5>Problema com a Impressora</h5>
+                <p>Este campo é focado em problemas relacionados às impressoras da <strong>RSA</strong>, como ruídos durante o uso, manchas nas impressões, pedidos de preventiva, entre outros. Lembrando, este campo é focado somente nas impressoras da terceirizada (<strong>RSA</strong>)</p>
+                <h5>Problema de Telefonia</h5>
+                <p>Este campo por sua vez, é focado nos problemas relacionados ao sistema de telefonia da escola. Atualmente, as linhas telefônicas das escolas estão em contrato com a empresa <strong>Vivo</strong>, por este motivo, sempre que as escolas têm um problema como ruído na linha, telefone mudo etc, pedimos que seja aberto primeiramente um chamado com a empresa e caso seja comprovado que o problema é interno, neste caso pedimos que seja aberto este tipo de chamado. Exemplos: Reparo dos cabos internos da linha telefônica e Parte da Infraestrutura.</p>
                 <div class="div-center">
                     <img src="img/glpi/glpiPrincipal.jpeg" alt="Tela principal do GLPI">
                     <p><strong>Fonte:</strong>Autores.</p>
                 </div>
-                <p>Por exemplo, vamos selecionar "Solicitação de Serviço de TI".</p>
-                <p><strong>Respondendo o formulário</strong></p>
-                <p>Cada formulário terá suas próprias perguntas, neste caso, iremos estar respondendo cada uma das perguntas conforme aparecem.</p>
+                <h4>Formulário</h4>
+                <p>Na <strong>Tela de Formulário</strong>, será necessário o preenchimento dos campos, um deles é a descrição do problema, pedimos que esta descrição seja a mais completa possível para que possamos direcionar corretamente ao <strong>Grupo Técnico</strong> correto.</p>
                 <div class="div-center">
                     <img src="img/glpi/glpiFormulario.jpeg" alt="Tela com o formulário de 'Serviços de TI' da tela do GLPI">
                     <p><strong>Fonte:</strong>Autores.</p>
                 </div>
                 <p>Após o preenchimento e clicar em "Enviar", o relatório irá gerar um chamado e que poderá ser acompanhado pela tela de Chamados.</p>
-                <p><strong>Acompanhando os chamados</strong></p>
-                <p>Abaixo esta a tela que os usuários das escolas podem estar usando para se ter acesso aos chamados já existentes da escola, além de estar acompanhando os status e as soluções geradas em seus chamados.</p>
+                <p>Sobre <strong>Incidente </strong>ou <strong>Requisição</strong>: Entende-se por <strong>Inicidente </strong>situações que venham a ocorrer sem que o usuário queira, como por exemplo, o rompimento de um cabo. Enquanto a <strong>Requisição </strong> é quando o usuário gostaria que algo ocorra, por exemplo, auxílio quanto ao uso de software.</p>
+                <h4>Acompanhando os Chamados</h4>
+                <p>Na <strong>Tela Inicial </strong>, é possível verificar o status dos chamados atuais, na parte superior há alguns retangulos com as descrições <strong>"Todos", "Novo", "Atribuído", etc</strong>. Estes campos irão levar até os chamados relacionados à <strong>Entidade</strong>. Por exemplo, a imagem abaixo demonstra que a <strong>Entidade </strong>em questão tem ao todo 10 chamados abertos junto ao <strong>GLPI</strong>.</p>
                 <div class="div-center">
                     <img src="img/glpi/glpiChamados.jpeg" alt="Tela contendo os chamados do usuário no GLPI">
                     <p><strong>Fonte:</strong>Autores.</p>
                 </div>
-                <p>Desta maneira, as escolas podem estar fazendo o acomapnhamento dos chamados abertos junto a equipe de TI da SME. Vale notar, que toda vez que for questionado por e-mail, sempre será descrito também o número do ticket (chamado) junto ao assunto, desta maneira poderá ser melhor acompanhado.</p>
+                <h3>Complementando</h3>
+                <p>Este tutorial foi feito para tratar possíveis dúvidas, devido ao fato que notamos que boa parte de nossos usuários não tem conhecimento do Sistema e nem sabem como estar abrindo um chamado. Mesmo assim, caso ainda persistam dúvidas, podem estar indo ao campo <a href="#" onclick="showSection(contatoSection)">Contato</a> para acessar nosso <strong>Telefone </strong> e <strong>E-mail</strong>.</p>
             </section>
             <!-- IMPRESSORAS -->
             <section class="container hidden" id="impressora-section">
@@ -219,6 +244,12 @@
             <section class="container hidden" id="sobre-section">
                 <h1>SOBRE</h1>
                 <hr>
+                <h2>A razão de criarmos este Blog</h2>
+                <p>Não é algo novo que a idéia por trás da informática parece mágica para algumas pessoas, pensando nestas pessoas, pensamos em criar este blog voltado a pequenas instruções, dicas de uso e trazer as informações que a equipe tem sobre os assuntos relacionados a ela nas escolas.</p>
+                <p>Vale notar que boa parte dos textos descritos aqui são mais informativos e em alguns casos, são apenas cópias ou relacionam links que irão levar aos sites oficiais com as informações apresentadas, gostaríamos de deixar claro que muitas vezes também não temos todo o conhecimento sobre um tópico, apenas somos um hub que naquele momento tem aquela informação.</p>
+                <hr>
+                <h2>Finalizando</h2>
+                <p>Com isto em mente, inicialmente o objetivo é trazer instruções de uso de nossos sitemas e equipamentos mais usados, como no caso do <strong>GLPI </strong>e das impressoras <strong>Kyocera M3655idn</strong> e <strong>Kyocera M2640idw</strong>. No futuro, pretendemos também adicionar mais informações com instruções sobre os <strong>softwares </strong>mais usados nos computadores das escolas e, também, trazer as informações que nós temos acesso sobre o <strong>Programa Escolas Conectadas - Fust</strong>.</p>
             </section>
             <section class="container hidden" id="carregamento-section">
                 <p>Carregando</p>
